@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+.venv
+
+# Streamlit
+.streamlit/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# Output files
+*.yaml
+*.json
+!data/*.json
+!requirements.txt
+
+# Logs
+*.log
+
+# Environment
+.env
+.env.local
