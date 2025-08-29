@@ -5,19 +5,11 @@
     "size_b": 72,
     "active_b": 72,
     "context_k": 128,
-    "specialization": [
-      "general",
-      "planning",
-      "tool-use"
-    ],
+    "specialization": ["general", "planning", "tool-use"],
     "license": "Open-Weight",
     "arch": "dense",
     "notes": "Long context; strong structured output",
-    "defaults": {
-      "layers": 80,
-      "d_model": 8192,
-      "kv_groups": 8
-    }
+    "defaults": {"layers": 80, "d_model": 8192, "kv_groups": 8}
   },
   {
     "name": "Qwen2.5-Coder-32B",
@@ -25,18 +17,11 @@
     "size_b": 32,
     "active_b": 32,
     "context_k": 128,
-    "specialization": [
-      "code",
-      "sql"
-    ],
+    "specialization": ["code", "sql"],
     "license": "Open-Weight",
     "arch": "dense",
     "notes": "Repo-level, long-context code tasks",
-    "defaults": {
-      "layers": 48,
-      "d_model": 6656,
-      "kv_groups": 8
-    }
+    "defaults": {"layers": 48, "d_model": 6656, "kv_groups": 8}
   },
   {
     "name": "DBRX Instruct",
@@ -44,19 +29,11 @@
     "size_b": 132,
     "active_b": 36,
     "context_k": 32,
-    "specialization": [
-      "general",
-      "code",
-      "math"
-    ],
+    "specialization": ["general", "code", "math"],
     "license": "Permissive",
     "arch": "moe",
     "notes": "MoE; good throughput per quality",
-    "defaults": {
-      "layers": 64,
-      "d_model": 7168,
-      "kv_groups": 8
-    }
+    "defaults": {"layers": 64, "d_model": 7168, "kv_groups": 8}
   },
   {
     "name": "Llama-3.1-70B-Instruct",
@@ -64,18 +41,11 @@
     "size_b": 70,
     "active_b": 70,
     "context_k": 64,
-    "specialization": [
-      "general",
-      "rag"
-    ],
+    "specialization": ["general", "rag"],
     "license": "Community",
     "arch": "dense",
     "notes": "Strong generalist; check license terms",
-    "defaults": {
-      "layers": 80,
-      "d_model": 8192,
-      "kv_groups": 8
-    }
+    "defaults": {"layers": 80, "d_model": 8192, "kv_groups": 8}
   },
   {
     "name": "DeepSeek-Coder-V2-Lite-16B",
@@ -83,19 +53,11 @@
     "size_b": 16,
     "active_b": 16,
     "context_k": 128,
-    "specialization": [
-      "code",
-      "sql",
-      "math"
-    ],
+    "specialization": ["code", "sql", "math"],
     "license": "Permissive",
     "arch": "dense",
     "notes": "Code specialist; long context",
-    "defaults": {
-      "layers": 40,
-      "d_model": 5120,
-      "kv_groups": 8
-    }
+    "defaults": {"layers": 40, "d_model": 5120, "kv_groups": 8}
   },
   {
     "name": "Gemma2-27B",
@@ -103,18 +65,11 @@
     "size_b": 27,
     "active_b": 27,
     "context_k": 8,
-    "specialization": [
-      "general",
-      "rag"
-    ],
+    "specialization": ["general", "rag"],
     "license": "Open-Weight",
     "arch": "dense",
     "notes": "Efficient dense model",
-    "defaults": {
-      "layers": 48,
-      "d_model": 5632,
-      "kv_groups": 8
-    }
+    "defaults": {"layers": 48, "d_model": 5632, "kv_groups": 8}
   },
   {
     "name": "Mixtral-8x22B",
@@ -122,18 +77,11 @@
     "size_b": 176,
     "active_b": 44,
     "context_k": 32,
-    "specialization": [
-      "general",
-      "planning"
-    ],
+    "specialization": ["general", "planning"],
     "license": "Apache-2.0",
     "arch": "moe",
     "notes": "MoE: high quality, mid-latency",
-    "defaults": {
-      "layers": 64,
-      "d_model": 6144,
-      "kv_groups": 8
-    }
+    "defaults": {"layers": 64, "d_model": 6144, "kv_groups": 8}
   },
   {
     "name": "StarCoder2-15B",
@@ -141,16 +89,10 @@
     "size_b": 15,
     "active_b": 15,
     "context_k": 16,
-    "specialization": [
-      "code"
-    ],
+    "specialization": ["code"],
     "license": "OpenRAIL-M",
     "arch": "dense",
     "notes": "Great FIM/insertion for IDEs",
-    "defaults": {
-      "layers": 40,
-      "d_model": 5120,
-      "kv_groups": 8
-    }
+    "defaults": {"layers": 40, "d_model": 5120, "kv_groups": 8}
   }
 ]

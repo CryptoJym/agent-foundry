@@ -1,0 +1,380 @@
+[
+  {
+    "name": "Qwen2.5-72B-Instruct",
+    "family": "Qwen2.5",
+    "size_b": 72,
+    "active_b": 72,
+    "context_k": 128,
+    "arch": "dense",
+    "version": null,
+    "specialization": [
+      "general",
+      "planning",
+      "tool-use"
+    ],
+    "license": "Open-Weight",
+    "defaults": {
+      "layers": 80,
+      "d_model": 8192,
+      "kv_groups": 8,
+      "n_heads": null,
+      "vocab_size": null,
+      "rope_theta": null
+    },
+    "quantization": {
+      "int4": true,
+      "int8": true,
+      "fp16": true,
+      "gptq": false,
+      "awq": false,
+      "gguf": false,
+      "optimal_quant": "int4"
+    },
+    "hardware": {
+      "min_vram_gb": 40,
+      "recommended_vram_gb": 80,
+      "min_ram_gb": 80,
+      "optimal_gpu": null
+    },
+    "performance": null,
+    "notes": "Long context; strong structured output",
+    "release_date": null,
+    "paper_url": null,
+    "model_card_url": null,
+    "base_model": null,
+    "training_data": null,
+    "vllm_compatible": true,
+    "tgi_compatible": true,
+    "tensorrt_compatible": false
+  },
+  {
+    "name": "Qwen2.5-Coder-32B",
+    "family": "Qwen2.5-Coder",
+    "size_b": 32,
+    "active_b": 32,
+    "context_k": 128,
+    "arch": "dense",
+    "version": null,
+    "specialization": [
+      "code",
+      "sql"
+    ],
+    "license": "Open-Weight",
+    "defaults": {
+      "layers": 48,
+      "d_model": 6656,
+      "kv_groups": 8,
+      "n_heads": null,
+      "vocab_size": null,
+      "rope_theta": null
+    },
+    "quantization": {
+      "int4": true,
+      "int8": true,
+      "fp16": true,
+      "gptq": false,
+      "awq": false,
+      "gguf": false,
+      "optimal_quant": "int4"
+    },
+    "hardware": {
+      "min_vram_gb": 16,
+      "recommended_vram_gb": 24,
+      "min_ram_gb": 32,
+      "optimal_gpu": null
+    },
+    "performance": null,
+    "notes": "Repo-level, long-context code tasks",
+    "release_date": null,
+    "paper_url": null,
+    "model_card_url": null,
+    "base_model": null,
+    "training_data": null,
+    "vllm_compatible": true,
+    "tgi_compatible": true,
+    "tensorrt_compatible": false
+  },
+  {
+    "name": "DBRX Instruct",
+    "family": "DBRX",
+    "size_b": 132,
+    "active_b": 36,
+    "context_k": 32,
+    "arch": "moe",
+    "version": null,
+    "specialization": [
+      "general",
+      "code",
+      "math"
+    ],
+    "license": "Permissive",
+    "defaults": {
+      "layers": 64,
+      "d_model": 7168,
+      "kv_groups": 8,
+      "n_heads": null,
+      "vocab_size": null,
+      "rope_theta": null
+    },
+    "quantization": {
+      "int4": true,
+      "int8": true,
+      "fp16": true,
+      "gptq": false,
+      "awq": false,
+      "gguf": false,
+      "optimal_quant": "int4"
+    },
+    "hardware": {
+      "min_vram_gb": 80,
+      "recommended_vram_gb": 160,
+      "min_ram_gb": 160,
+      "optimal_gpu": null
+    },
+    "performance": null,
+    "notes": "MoE; good throughput per quality",
+    "release_date": null,
+    "paper_url": null,
+    "model_card_url": null,
+    "base_model": null,
+    "training_data": null,
+    "vllm_compatible": true,
+    "tgi_compatible": true,
+    "tensorrt_compatible": false
+  },
+  {
+    "name": "Llama-3.1-70B-Instruct",
+    "family": "Llama",
+    "size_b": 70,
+    "active_b": 70,
+    "context_k": 64,
+    "arch": "dense",
+    "version": null,
+    "specialization": [
+      "general",
+      "rag"
+    ],
+    "license": "Community",
+    "defaults": {
+      "layers": 80,
+      "d_model": 8192,
+      "kv_groups": 8,
+      "n_heads": null,
+      "vocab_size": null,
+      "rope_theta": null
+    },
+    "quantization": {
+      "int4": true,
+      "int8": true,
+      "fp16": true,
+      "gptq": false,
+      "awq": false,
+      "gguf": false,
+      "optimal_quant": "int4"
+    },
+    "hardware": {
+      "min_vram_gb": 40,
+      "recommended_vram_gb": 80,
+      "min_ram_gb": 80,
+      "optimal_gpu": null
+    },
+    "performance": null,
+    "notes": "Strong generalist; check license terms",
+    "release_date": null,
+    "paper_url": null,
+    "model_card_url": null,
+    "base_model": null,
+    "training_data": null,
+    "vllm_compatible": true,
+    "tgi_compatible": true,
+    "tensorrt_compatible": false
+  },
+  {
+    "name": "DeepSeek-Coder-V2-Lite-16B",
+    "family": "DeepSeek-Coder-V2",
+    "size_b": 16,
+    "active_b": 16,
+    "context_k": 128,
+    "arch": "dense",
+    "version": null,
+    "specialization": [
+      "code",
+      "sql",
+      "math"
+    ],
+    "license": "Permissive",
+    "defaults": {
+      "layers": 40,
+      "d_model": 5120,
+      "kv_groups": 8,
+      "n_heads": null,
+      "vocab_size": null,
+      "rope_theta": null
+    },
+    "quantization": {
+      "int4": true,
+      "int8": true,
+      "fp16": true,
+      "gptq": false,
+      "awq": false,
+      "gguf": false,
+      "optimal_quant": "int4"
+    },
+    "hardware": {
+      "min_vram_gb": 16,
+      "recommended_vram_gb": 24,
+      "min_ram_gb": 32,
+      "optimal_gpu": null
+    },
+    "performance": null,
+    "notes": "Code specialist; long context",
+    "release_date": null,
+    "paper_url": null,
+    "model_card_url": null,
+    "base_model": null,
+    "training_data": null,
+    "vllm_compatible": true,
+    "tgi_compatible": true,
+    "tensorrt_compatible": false
+  },
+  {
+    "name": "Gemma2-27B",
+    "family": "Gemma2",
+    "size_b": 27,
+    "active_b": 27,
+    "context_k": 8,
+    "arch": "dense",
+    "version": null,
+    "specialization": [
+      "general",
+      "rag"
+    ],
+    "license": "Open-Weight",
+    "defaults": {
+      "layers": 48,
+      "d_model": 5632,
+      "kv_groups": 8,
+      "n_heads": null,
+      "vocab_size": null,
+      "rope_theta": null
+    },
+    "quantization": {
+      "int4": true,
+      "int8": true,
+      "fp16": true,
+      "gptq": false,
+      "awq": false,
+      "gguf": false,
+      "optimal_quant": "int4"
+    },
+    "hardware": {
+      "min_vram_gb": 16,
+      "recommended_vram_gb": 24,
+      "min_ram_gb": 32,
+      "optimal_gpu": null
+    },
+    "performance": null,
+    "notes": "Efficient dense model",
+    "release_date": null,
+    "paper_url": null,
+    "model_card_url": null,
+    "base_model": null,
+    "training_data": null,
+    "vllm_compatible": true,
+    "tgi_compatible": true,
+    "tensorrt_compatible": false
+  },
+  {
+    "name": "Mixtral-8x22B",
+    "family": "Mixtral",
+    "size_b": 176,
+    "active_b": 44,
+    "context_k": 32,
+    "arch": "moe",
+    "version": null,
+    "specialization": [
+      "general",
+      "planning"
+    ],
+    "license": "Apache-2.0",
+    "defaults": {
+      "layers": 64,
+      "d_model": 6144,
+      "kv_groups": 8,
+      "n_heads": null,
+      "vocab_size": null,
+      "rope_theta": null
+    },
+    "quantization": {
+      "int4": true,
+      "int8": true,
+      "fp16": true,
+      "gptq": false,
+      "awq": false,
+      "gguf": false,
+      "optimal_quant": "int4"
+    },
+    "hardware": {
+      "min_vram_gb": 80,
+      "recommended_vram_gb": 160,
+      "min_ram_gb": 160,
+      "optimal_gpu": null
+    },
+    "performance": null,
+    "notes": "MoE: high quality, mid-latency",
+    "release_date": null,
+    "paper_url": null,
+    "model_card_url": null,
+    "base_model": null,
+    "training_data": null,
+    "vllm_compatible": true,
+    "tgi_compatible": true,
+    "tensorrt_compatible": false
+  },
+  {
+    "name": "StarCoder2-15B",
+    "family": "StarCoder2",
+    "size_b": 15,
+    "active_b": 15,
+    "context_k": 16,
+    "arch": "dense",
+    "version": null,
+    "specialization": [
+      "code"
+    ],
+    "license": "OpenRAIL-M",
+    "defaults": {
+      "layers": 40,
+      "d_model": 5120,
+      "kv_groups": 8,
+      "n_heads": null,
+      "vocab_size": null,
+      "rope_theta": null
+    },
+    "quantization": {
+      "int4": true,
+      "int8": true,
+      "fp16": true,
+      "gptq": false,
+      "awq": false,
+      "gguf": false,
+      "optimal_quant": "int4"
+    },
+    "hardware": {
+      "min_vram_gb": 8,
+      "recommended_vram_gb": 16,
+      "min_ram_gb": 16,
+      "optimal_gpu": null
+    },
+    "performance": null,
+    "notes": "Great FIM/insertion for IDEs",
+    "release_date": null,
+    "paper_url": null,
+    "model_card_url": null,
+    "base_model": null,
+    "training_data": null,
+    "vllm_compatible": true,
+    "tgi_compatible": true,
+    "tensorrt_compatible": false
+  }
+]
