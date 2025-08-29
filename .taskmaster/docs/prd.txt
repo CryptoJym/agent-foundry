@@ -1,0 +1,85 @@
+# Agent Foundry - Product Requirements Document
+
+## Project Overview
+Agent Foundry is an interactive web application that helps engineering teams select and deploy open-weight language models by making model physics tangible through VRAM calculations, latency estimations, and hardware constraint analysis.
+
+## Core Problem
+Teams struggle with model selection due to lack of understanding of model "physics" - VRAM requirements, latency calculations, quantization impacts. This leads to failed deployments, over-provisioned hardware, and premature fine-tuning attempts.
+
+## Target Users
+- ML Engineers deploying models to meet performance SLOs
+- Tech Leads making build-vs-buy decisions  
+- Solutions Architects designing scalable AI systems
+
+## Key Features
+
+### Model Atlas
+- Searchable catalog of 50+ open-weight models
+- Standardized comparisons across families
+- Filter by task, license, architecture
+- Side-by-side model comparison view
+
+### Physics Lab  
+- VRAM calculator: weights + KV cache + overhead
+- Latency estimator: TTFT + decode time
+- Interactive parameter adjustments
+- Real-time visualization of impacts
+
+### Solution Composer
+- Guided wizard based on constraints
+- Hardware budget consideration
+- Latency SLO compliance checking
+- Export deployment configurations
+
+### Tuning Triage
+- Decision framework for fine-tuning
+- LoRA/QLoRA recommendations
+- Dataset size requirements
+- Alternative approaches (RAG, larger models)
+
+## Technical Requirements
+- Python 3.8+ with Streamlit framework
+- JSON-based model registry
+- Modular calculator engines
+- YAML/JSON export functionality
+- No external API dependencies for MVP
+
+## Implementation Phases
+
+### Phase 1: Core Engine (Weeks 1-2)
+- Model registry schema design
+- VRAM and latency calculators
+- Scoring algorithm implementation
+- Unit testing framework
+
+### Phase 2: UI Development (Weeks 3-4)  
+- Streamlit application structure
+- Four main modules implementation
+- Export functionality
+- Responsive design
+
+### Phase 3: Educational Layer (Week 5)
+- Parameter explanations and tooltips
+- Interactive exercises
+- Challenge scenarios
+- Visual learning aids
+
+### Phase 4: Testing & Launch (Week 6)
+- Internal team testing
+- Partner team feedback
+- Performance validation
+- Public release preparation
+
+## Success Metrics
+- 100+ daily active users within 3 months
+- 50% reduction in failed deployments
+- 30-40% hardware cost savings
+- 80% team adoption rate
+
+## Future Enhancements
+- Cloud cost calculator
+- Multi-GPU deployment planning
+- Serving framework integrations
+- Team collaboration features
+- Performance benchmarking
+- AutoML integration
